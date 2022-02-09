@@ -35,12 +35,25 @@
         padding-left: 8px;
         padding-right: 8px
     }
+    
+    .col-half {
+        width: 50%;
+    }
+    
+    .col-third {
+        width: 33.33333%;
+    }
     /* main */
     
     #main {}
     
     .text-white {
         color: #fff !important;
+    }
+    
+    .text-center {
+        /* dùng !important để sau này hễ ai dùng biến text-align này đều ưu tiên căn giữa */
+        text-align: center !important;
     }
     
     #header {
@@ -194,12 +207,6 @@
         overflow: hidden;
     }
     
-    #content .member-item {
-        float: left;
-        width: 33.33333%;
-        text-align: center;
-    }
-    
     #content .member-name {
         font-size: 15px;
     }
@@ -253,12 +260,6 @@
     .places-list {
         margin-top: 32px;
         margin-bottom: 48px;
-    }
-    
-    .place-item {
-        float: left;
-        width: 33.33333%;
-        padding: 0 8px;
     }
     
     .place-img {
