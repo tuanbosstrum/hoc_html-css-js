@@ -62,6 +62,22 @@
     .col-third {
         width: 33.33333%;
     }
+    
+    .btn {
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 11px 16px;
+        display: inline-block;
+        margin-top: 15px;
+        border: none;
+    }
+    
+    .btn:hover {
+        color: #000;
+        background-color: #ccc;
+        cursor: pointer;
+    }
     /* main */
     
     #main {}
@@ -73,6 +89,10 @@
     .text-center {
         /* dùng !important để sau này hễ ai dùng biến text-align này đều ưu tiên căn giữa */
         text-align: center !important;
+    }
+    
+    .pull-right {
+        float: right !important;
     }
     
     #header {
@@ -195,7 +215,7 @@
     
     #content .content-section {
         width: 800px;
-        padding: 64px 0;
+        padding: 64px 0 112px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -278,7 +298,6 @@
     
     .places-list {
         margin-top: 32px;
-        margin-bottom: 48px;
     }
     
     .place-img {
@@ -310,20 +329,6 @@
         font-size: 15px;
         line-height: 1.4;
     }
-    
-    .place-buy-btn {
-        color: #fff;
-        background-color: #000;
-        text-decoration: none;
-        padding: 11px 16px;
-        display: inline-block;
-        margin-top: 15px;
-    }
-    
-    .place-buy-btn:hover {
-        color: #000;
-        background-color: #ccc;
-    }
     /* contact form */
     
     .contact-content {
@@ -349,17 +354,41 @@
         border: 1px solid #ccc;
         width: 100%;
     }
+    /* bản đồ */
     
-    .contact-form .form-submit-btn {
-        background-color: #000;
-        color: #fff;
-        border: 1px solid #000;
-        padding: 10px 16px;
-        float: right;
+    .map-section img {
+        width: 100%;
     }
     /* footer section */
     
-    #footer {}
+    #footer {
+        padding: 64px 16px;
+        text-align: center;
+    }
+    
+    #footer .socials-list {
+        font-size: 24px;
+    }
+    
+    #footer .socials-list a {
+        color: rgba(0, 0, 0, 0.6);
+        /* bỏ gạch chân(text-decoration) */
+        text-decoration: none;
+    }
+    
+    #footer .copyright a,
+    #footer .socials-list a:hover {
+        color: rgba(0, 0, 0, 0.4);
+    }
+    
+    #footer .copyright {
+        margin-top: 15px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    
+    #footer .copyright a {
+        color: rgba(0, 0, 0, 0.6);
+    }
     /* modal */
     
     .modal {
