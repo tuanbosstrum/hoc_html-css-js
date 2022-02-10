@@ -81,7 +81,10 @@
     }
     /* main */
     
-    #main {}
+    #main {
+        /* cách fixbug hạn chế(không nên dùng) do không tìm ra lỗi đổ khoảng trắng(overflow) */
+        /* overflow: hidden; */
+    }
     
     .text-white {
         color: #fff !important;
@@ -216,9 +219,18 @@
     
     #content .content-section {
         width: 800px;
+        max-width: 100%;
         padding: 64px 0 112px;
         margin-left: auto;
         margin-right: auto;
+        /* bug: Khoảng trắng do 
+            .row {
+                margin-left: -8px;
+                margin-right: -8px;
+            } 
+        nếu không có hai cái padding này */
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     #content .section-heading {
