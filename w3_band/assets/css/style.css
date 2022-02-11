@@ -143,8 +143,8 @@
         display: block;
     }
     
-    #nav .subnav li:hover a,
-    #nav>li:hover>a {
+    #nav>li:hover>a,
+    #nav .subnav li:hover a {
         color: #000;
         background-color: #ccc;
     }
