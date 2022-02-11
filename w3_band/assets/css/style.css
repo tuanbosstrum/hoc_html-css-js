@@ -177,6 +177,14 @@
     }
     /* menu mobile btn */
     
+    #header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* ẩn nút search */
+        display: none;
+    }
+    
     #header .mobile-menu-btn,
     #header .search-btn {
         float: right;

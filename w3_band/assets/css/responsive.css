@@ -7,8 +7,20 @@
  /* Mobile */
  
  @media (max-width:740px) {
+     /* tránh lỗi bị ẩn menu và menu không thể trượt do lỗi inline-block*/
+     #nav {
+         display: block;
+     }
      /* sửa chiều ngang menu lại thành chiều dọc phù hợp với màn hình mobile */
      #nav>li {
+         display: block;
+     }
+     /* lỗi thanh menu bị lỗi khi click ở giữa nếu click vào */
+     #nav>li:first-child {
+         display: inline-block;
+     }
+     /* ẩn hiện nút search-btn */
+     #header .mobile-menu-btn {
          display: block;
      }
      #header .search-btn {
