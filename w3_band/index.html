@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="shortcut icon" type="image/png" href="./assets/img/icon/theband.png" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- lưu ý link Css: dặt link css mới xuống dưới để được ưu tiên hơn(độ ưu tiên của css) -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -50,6 +52,10 @@
             <!-- Begin: search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <!-- search-mpbile -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End: search button -->
 
@@ -254,6 +260,31 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
+        // script mobile
+        // không cần viết #header(tức kí hiệu ID khi đã dùng lệnh getElementById)
+        var header = document.getElementById('header');
+        var moblileMenu = document.getElementById('mobile-menu');
+
+        // tạo biến tránh trường hợp sau này đổi chiều cao của header thì khi scroll thì sẽ không hiển thị được menu
+        var headerHeight = header.clientHeight;
+        moblileMenu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = header;
+            }
+        }
     </script>
 </body>
 

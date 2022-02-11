@@ -107,6 +107,8 @@
         height: 46px;
         background-color: #000;
         z-index: 1;
+        /* thêm thuộc tính ẩn đóng menu cho mobile */
+        overflow: hidden;
     }
     
     #nav {
@@ -173,22 +175,34 @@
     #nav .nav-arrow-down {
         font-size: 14px;
     }
+    /* menu mobile btn */
     
+    #header .mobile-menu-btn,
     #header .search-btn {
         float: right;
         padding: 0 21;
     }
     
+    #header .menu-icon,
     #header .search-icon {
         color: #fff;
         font-size: 20px;
         line-height: 46px;
     }
     
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    #header .mobile-menu-btn:hover .menu-icon {
+        background: #000;
+    }
+    
     #header .search-btn:hover {
         cursor: pointer;
         background-color: #f44336;
     }
+    /* end-mobile */
     
     #slider {
         position: relative;
