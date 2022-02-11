@@ -151,7 +151,7 @@
     
     #nav li:hover a {
         color: #000;
-        background-color: #ccc;
+        /* background-color: #ccc; */
     }
     
     #nav .subnav {
