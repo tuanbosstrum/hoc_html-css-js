@@ -80,11 +80,10 @@
         cursor: pointer;
     }
     /* main */
-    
-    #main {
-        /* cách fixbug hạn chế(không nên dùng) do không tìm ra lỗi đổ khoảng trắng(overflow) */
-        /* overflow: hidden; */
-    }
+    /* cách fixbug hạn chế(không nên dùng) do không tìm ra lỗi đổ khoảng trắng(overflow) */
+    /* #main {
+        overflow: hidden;
+    } */
     
     .text-white {
         color: #fff !important;
@@ -141,6 +140,7 @@
     
     #nav li:hover .subnav {
         display: block;
+        cursor: pointer;
     }
     
     #nav>li:hover>a,
@@ -234,8 +234,7 @@
         font-size: 15px;
         margin-top: 25px;
     }
-    
-    #content {}
+    /* #content {} */
     
     #content .content-section {
         width: 800px;
