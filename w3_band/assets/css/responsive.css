@@ -7,9 +7,14 @@
  /* Mobile */
  
  @media (max-width:740px) {
+     /* phóng to nút SEND(click chọn) cho mobile */
      /* tạo chiều ngang cho mobile */
+     .s-full-width,
      .s-col-full {
-         width: 100%;
+         width: 100% !important;
+     }
+     .s-mt-8 {
+         margin-top: 16px !important;
      }
      /* ẩn hiện nút search-btn */
      #header {
@@ -40,5 +45,9 @@
      /* lỗi thanh menu bị lỗi khi click ở giữa nếu click vào */
      #nav>li:first-child {
          display: inline-block;
+     }
+     /* sửa contact form */
+     .contact-form {
+         margin-top: 16px;
      }
  }

@@ -34,6 +34,10 @@
         margin-top: 16px !important;
     }
     
+    .mt-32 {
+        margin-top: 32px !important;
+    }
+    
     .row {
         margin-left: -8px;
         margin-right: -8px;
@@ -72,6 +76,8 @@
         display: inline-block;
         margin-top: 15px;
         border: none;
+        /* text-aline center áp dụng cho trường hợp ở mobile */
+        text-align: center;
     }
     
     .btn:hover {
