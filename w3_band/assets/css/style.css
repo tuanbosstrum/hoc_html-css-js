@@ -78,6 +78,8 @@
         border: none;
         /* text-aline center áp dụng cho trường hợp ở mobile */
         text-align: center;
+        appearance: none;
+        -webkit-appearance: none;
     }
     
     .btn:hover {
