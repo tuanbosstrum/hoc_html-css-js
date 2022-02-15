@@ -3,12 +3,14 @@
  Lưu ý nhỏ:
     pc: >=1024px
     tablet: >=740px & <1024px
-    mobile: <740px */
+    mobile: <740px
+    fix lỗi trình duyệt: đổi đơn vị px thành em(search google px to em 
+ */
  
- @media (min-width:1024px) {}
+ @media (min-width:64em) {}
  /* Tablet & mobile */
  
- @media (max-width:1023px) {
+ @media (max-width:63.9375em) {
      .btn {
          padding: 15px 16px;
      }
@@ -38,14 +40,14 @@
  }
  /* Tablet */
  
- @media (min-width:740px) and (max-width:1023px) {
+ @media (min-width:46.25em) and (max-width:63.9375em) {
      .contact-info {
          line-height: 2;
      }
  }
  /* Mobile */
  
- @media (max-width:739px) {
+ @media (max-width:46.1875em) {
      /* phóng to nút SEND(click chọn) cho mobile */
      /* tạo chiều ngang cho mobile */
      .s-full-width,
