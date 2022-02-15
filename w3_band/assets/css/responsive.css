@@ -1,4 +1,9 @@
  /* PC */
+ /* 
+ Lưu ý nhỏ:
+    pc: >=1024px
+    tablet: >=740px & <1024px
+    mobile: <740px */
  
  @media (min-width:1024px) {}
  /* Tablet & mobile */
@@ -40,7 +45,7 @@
  }
  /* Mobile */
  
- @media (max-width:740px) {
+ @media (max-width:739px) {
      /* phóng to nút SEND(click chọn) cho mobile */
      /* tạo chiều ngang cho mobile */
      .s-full-width,
