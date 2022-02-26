@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+a {
+    font-size: 16px;
+}
+
+.text-white {
+    color: rgb(255, 255, 255) !important;
+}
+
+.text-capitalized {
+    text-transform: capitalize !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/*mạng xã hội*/
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #222328;
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-top .col-md-4 .socials {
+    font-size: 16px;
+    padding: 0px 8px 8px 8px;
+}
+
+.header-top .col-md-4 .socials a {
+    text-decoration: none;
+    color: azure;
+}
+
+.header-top .col-md-4 .socials a:hover {
+    color: #f75757;
+}
+
+.header-top .col-md-4 .socials,
+#fb,
+#tw,
+#gh {
+    padding: 0 8px 8px 8px;
+}
+
+.header-top .col-md-8 .info a {
+    text-decoration: none;
+    color: azure;
+}
+
+.header-top .col-md-8 .info a:hover {
+    color: #f75757;
+}
+
+.header-top .col-md-8 .info {
+    font-size: 16px;
+    padding-left: 200px;
+}
+
+.header-top .col-md-8 .info,
+#tel,
+#email {
+    padding: 0 8px 8px 8px;
+}
+
+
+/*menu*/
+
+.menu {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin: top;
+    background-color: #222328;
+}
+
+.menu .col-md-2,
+.col-md-10 {
+    margin-top: 40px;
+}
+
+#navbar {
+    background: #222328;
+    font-size: 20px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+}
+
+#navbar .col-md-2 a {
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar .col-md-2 a:hover {
+    color: #f75757;
+}
+
+#navbar .col-md-2 span {
+    color: #f75757;
+}
+
+#navbar .col-md-10 #header-menu a {
+    color: azure;
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+    text-transform: uppercase;
+}
+
+#navbar .col-md-10 #header-menu a:hover {
+    color: #f75757;
+}
+
+#navbar .col-md-10 #header-menu .active {
+    color: #f75757;
+}
+
+#navbar .btn {
+    padding: 0.7rem 1.5rem 0.5rem;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 1rem 2.5rem 0.8rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.btn-round-full {
+    border-radius: 50px;
+}
+
+.btn-solid-border {
+    border: 2px solid #f75757;
+    background: transparent;
+}
+
+
+/*menu đa cấp*/
+
+#header-menu>li {
+    display: inline-block;
+}
+
+#header-menu li {
+    position: relative;
+}
+
+#header-menu .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+#header-menu li:hover .subnav {
+    display: block;
+}
+
+#header-menu .subnav li:hover a,
+#header-menu>li:hover>a {
+    color: #f75757;
+    background-color: #ccc;
+    font-size: 16px;
+}
+
+#header-menu,
+.subnav {
+    list-style-type: none;
+}
+
+#header-menu li a {
+    color: azure;
+    display: inline-block;
+}
+
+#header-menu>li>a {
+    color: #fff;
+}
+
+#header-menu li:hover a {
+    color: azure;
+}
+
+#header-menu>li>a {
+    color: azure;
+    text-transform: uppercase;
+}
+
+
+/*section*/
+
+.slider {
+    position: relative;
+    background: url('../img/home1.jpg') top center / cover no-repeat;
+    background-size: cover;
+    background-position: 10% 0%;
+    padding: 200px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+
+.block {
+    display: block;
+}
+
+.slider .block span {
+    letter-spacing: 1px;
+}
+
+.slider .block .animate {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+}
