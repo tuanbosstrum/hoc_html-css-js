@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif, "Hind", serif;
     font-size: 16px;
 }
 
@@ -14,8 +15,24 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
 a {
     font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin: bottom 1rem;
+    line-height: 30px;
 }
 
 .text-white {
@@ -211,14 +228,27 @@ a {
 }
 
 
-/*section*/
+/*slider*/
 
 .slider {
     position: relative;
     background: url('../img/home1.jpg') top center / cover no-repeat;
     background-size: cover;
     background-position: 10% 0%;
-    padding: 200px 0;
+    padding: 300px 0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
 }
 
 .row {
@@ -237,10 +267,161 @@ a {
     letter-spacing: 1px;
 }
 
-.slider .block .animate {
+.slider .block .animation {
     font-size: 70px;
     line-height: 80px;
     font-weight: 600;
     color: #fff;
     display: block;
+}
+
+.btn-main {
+    background: #f75757;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+
+/* intro */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-8 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    margin-bottom: 70px;
+}
+
+.h6 {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.section-text {
+    color: #f75757;
+    font-size: 1rem;
+}
+
+.section-content-title {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h2 {
+    font-weight: 800;
+    line-height: 42px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-3 {
+    margin-top: 1rem !important;
+}
+
+.intro-item i {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.color-one {
+    color: #f75757;
+}
+
+[class^="ti-"],
+[class*="ti-"] {
+    font-family: 'themify';
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-desktop::before,
+.ti-medall::before,
+.ti-layers-alt::before {
+    content: "\e640";
+}
+
+
+/* about */
+
+.bg-about {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 45%;
+    min-height: 650px;
+    background: url('../img/about/home-8.jpg') no-repeat;
+    background-size: cover;
+}
+
+.col-lg-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.section-about-content {
+    padding: 20px 0px 0px 80px;
+}
+
+.section-about-content h4 {
+    font-weight: 600;
+}
+
+.section-about-content h4::before {
+    position: absolute;
+    content: "\f576";
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    position: absolute;
+    top: 8px;
+    left: -65px;
+    font-weight: 700;
+}
+
+.mb-3 {
+    margin-top: 1rem !important;
+}
+
+.mb-5 {
+    margin-top: 3rem !important;
 }
