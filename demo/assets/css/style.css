@@ -20,6 +20,11 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+h3 {
+    font-weight: 600;
+    color: #242424;
+}
+
 h4 {
     font-size: 1.3rem;
     line-height: 30px;
@@ -31,7 +36,7 @@ a {
 
 p {
     margin-top: 0;
-    margin: bottom 1rem;
+    margin: bottom 16px;
     line-height: 30px;
 }
 
@@ -152,7 +157,7 @@ p {
 }
 
 #navbar .btn {
-    padding: 0.7rem 1.5rem 0.5rem;
+    padding: 11.2px 24px 8px;
     color: #fff;
 }
 
@@ -160,7 +165,7 @@ p {
     display: inline-block;
     font-size: 0.8125rem;
     font-weight: 500;
-    padding: 1rem 2.5rem 0.8rem;
+    padding: 16px 32px 12.8px;
     text-transform: uppercase;
     border-radius: 0;
     transition: 0.3s;
@@ -285,15 +290,13 @@ p {
 /* intro */
 
 .row {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-.col-lg-8 {
+.col-lg-8,
+.col-lg-7 {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -317,7 +320,7 @@ p {
 
 .section-text {
     color: #f75757;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .section-content-title {
@@ -326,16 +329,16 @@ p {
 }
 
 h2 {
-    font-weight: 800;
+    font-weight: 600;
     line-height: 42px;
 }
 
 .mt-4 {
-    margin-top: 1.5rem !important;
+    margin-top: 24px !important;
 }
 
 .mb-3 {
-    margin-top: 1rem !important;
+    margin-top: 16px !important;
 }
 
 .intro-item i {
@@ -356,8 +359,6 @@ h2 {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .ti-desktop::before,
@@ -388,11 +389,11 @@ h2 {
 }
 
 .mb-4 {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 24px !important;
 }
 
 .mt-3 {
-    margin-top: 1rem !important;
+    margin-top: 16px !important;
 }
 
 .position-relative {
@@ -418,10 +419,42 @@ h2 {
     font-weight: 700;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .mb-3 {
-    margin-top: 1rem !important;
+    margin-top: 16 !important;
 }
 
 .mb-5 {
-    margin-top: 3rem !important;
+    margin-top: 48px !important;
+}
+
+
+/* counter */
+
+.counter-item,
+.counter-start {
+    font-size: 50px;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.counter-item p {
+    margin-bottom: 0;
+}
+
+.text-muted {
+    color: #6c757d !important;
+    font-size: 16px;
+}
+
+
+/* service */
+
+.text-color {
+    color: #f75757;
 }
