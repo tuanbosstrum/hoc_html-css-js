@@ -631,6 +631,18 @@ opacity: 0.5;
     background: #f5f8f9;
 }
 
+.btn-small {
+    padding: 13px 25px 10px;
+    font-size: 12p
+}
+
+.btn-solid-border {
+    border: 2px solid #f75757;
+    background: transparent;
+    color: #242424;
+    border-radius: 50px;
+}
+
 
 /* footer */
 
