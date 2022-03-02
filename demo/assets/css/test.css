@@ -84,14 +84,11 @@ p {
     z-index: 1000;
 }
 
-.header-top {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
 .header-top .col-md-4 .socials {
     font-size: 16px;
     padding: 0px 8px 8px 8px;
     float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .header-top .col-md-4 .socials a {
@@ -654,7 +651,7 @@ opacity: 0.5;
 
 a {
     color: #242424;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
 }
 
